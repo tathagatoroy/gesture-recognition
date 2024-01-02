@@ -11,6 +11,10 @@ import matplotlib.pyplot as plt
 
 
 if __name__=="__main__":
+    # add the dataset path here.
+    # each subfolder in the dataset should be a class name like rock or okay, or three
+    # each subfolder contains positive examples of all the images
+    # There needs to be none folder which defines the negative examples
     dataset_path = "/scratch/tathagato/hagrid_dataset_512"
     #dataset_path = "/scratch/tathagato/new/hagrid_dataset_512"
     data = gesture_recognizer.Dataset.from_folder(
